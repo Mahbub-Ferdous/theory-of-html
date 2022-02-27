@@ -32,10 +32,18 @@
 18.Link:Favicon tag     --------- <link rel="" href="" type="">  [if you want to get favicon in your title then link tag]
 19.span tag             --------- <span></span>
 20. section tag         --------- <section></section>         [ its means page or part of pages]
+21. Audio tag           --------- <audio></audio>    [ this audio tag is similar to img tag just fell the src attribute and after that controls]
+								  <audio src="media/audio/goat.mp3" controls ></audio>  [ you must give controls for show this in static page]
+22. video tag           --------- <video></video>    [ this video tag is similar to audio tag just fill the src attribute and after that controls]
+								  <video src="media/audio/goat.mp3" controls ></video>  [ you must give controls for show this in static page]
+                                  [ if you need audio video different attribute then seach it on google]
+23. youtube video tag ===========>> <iframe></iframe> [ for any other website api connect] if you want get youtube video in your static page then 		go to this youtube video and press share buuton and see there have embed option thats means youtube video api just copy and past yourhtmlbody 
+24. Semantic tags in html5 ...... head==>tittle==>header==>nav==>>section==>article==>div==>footer.
 
+25. All table tags   ===========>> <table> <thead> <tr> <th> <tbody> <tr> <td>    [ <table>==> all table tags start and end, <thead>==> means 		table heading part, <th>==> table heading, <tbody>==>means table body, <tr>==> table row, <td>==> means table data]
 
-
-
+26. if u want to comment in html than just type ctrl+/ then this line will be comment 
+27. abbr tags        ===========>> <abbr></abbr>
 
 
 
@@ -153,6 +161,144 @@ Here are the block-level elements in HTML:
 ######........ By default amra block elements er width,height,padding,margin dite pari but inline elementd er width and height kaj kore na only margin, padding horizontally i mean left right kaj kore....
 
 ######........ jodi amra inline elements gulo k block er moto sob diye css korte chai then amdr inline k inline rekhe block er moto behaviour e nite hobe ja css attribute display diye replace korte hbe like =====>> display: inline-block;
+
+
+###### ........  Html5 semantic tags =====->>
+so semantic tags means difference between html4 and html5 whats the defference ==> in html 4 maximum we make html code in div tags or containerise in div and his id or class but in html 5 there have semantic structure tag which is more easier than html4 tags. In semantic tags we have different different portion like head==>tittle==>header==>nav==>>section==>article==>div==>footer.
+
+In HTML there are some semantic elements that can be used to define different parts of a web page: 
+
+	<article>
+    <aside>
+    <details>
+    <figcaption>
+    <figure>
+    <footer>
+    <header>
+    <main>
+    <mark>
+    <nav>
+    <section>
+    <summary>
+    <time>
+    
+    
+###### ........ Here are the different input types you can use in HTML:
+
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+
+
+###### ........ List of All <form> Attributes:
+
+accept-charset ======> Specifies the character encodings used for form submission
+action         ======> Specifies where to send the form-data when a form is submitted
+autocomplete   ======> Specifies whether a form should have autocomplete on or off
+enctype        ======> Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+method 	       ======> Specifies the HTTP method to use when sending form-data
+name 	       ======> Specifies the name of the form
+novalidate 	   ======> Specifies that the form should not be validated when submitted
+rel 	       ======> Specifies the relationship between a linked resource and the current document
+target 	       ======> Specifies where to display the response that is received after submitting the form
+
+
+
+
+##### ........ 
+
+The HTML <form> element can contain one or more of the following form elements:
+
+    <input>
+    <label>
+    <select>
+    <textarea>
+    <button>
+    <fieldset>
+    <legend>
+    <datalist>
+    <output>
+    <option>
+    <optgroup>
+
+
+
+
+##### ...... HTML Input Attributes:
+
+=========>> The input "value" attribute specifies an initial value for an input field
+
+=========>> The input "readonly" attribute specifies that an input field is read-only
+
+=========>> The input "disabled" attribute specifies that an input field should be disabled
+
+=========>> The input "size" attribute specifies the visible width, in characters, of an input field.The default value for size is 20.The size 				attribute works with the following input types: text, search, tel, url, email, and password.
+
+=========>> The input "maxlength" attribute specifies the maximum number of characters allowed in an input field.
+
+=========>> The input "min" and "max" attributes specify the minimum and maximum values for an input field.he min and max attributes work with 				the following input types: number, range, date, datetime-local, month, time and week.Use the max and min attributes together to 			create a range of legal values.
+
+=========>> The input "multiple" attribute specifies that the user is allowed to enter more than one value in an input field.The multiple 				attribute works with the following input types: email, and file
+
+=========>> The input "pattern" attribute specifies a regular expression that the input field's value is checked against, when the form is 				submitted.The pattern attribute works with the following input types: text, date, search, url, tel, email, and password
+
+=========>> The input "placeholder" attribute specifies a short hint that describes the expected value of an input field (a sample value or a 				short description of the expected format).The short hint is displayed in the input field before the user enters a value.The 			placeholder attribute works with the following input types: text, search, url, tel, email, and password.
+
+=========>> The input "required" attribute specifies that an input field must be filled out before submitting the form.The required attribute 				works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
+
+=========>> The input "step" attribute specifies the legal number intervals for an input field.Example: if step="3", legal numbers could be -3, 			0, 3, 6, etc.This attribute can be used together with the max and min attributes to create a range of legal values.The step attribute 				works with the following input types: number, range, date, datetime-local, month, time and week.
+
+=========>> The input "autofocus" attribute specifies that an input field should automatically get focus when the page loads.
+
+=========>> The input "height" and "width" attributes specify the height and width of an <input type="image"> element
+
+=========>> The input "list" attribute refers to a "<datalist>" element that contains pre-defined options for an <input> element.
+
+=========>> The input "autocomplete" attribute specifies whether a form or an input field should have autocomplete on or off.Autocomplete allows 				the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, 				based on earlier typed values.The autocomplete attribute works with <form> and the following <input> types: text, search, url, tel, 			email, password, datepickers, range, and color.
+
+
+
+
+####### .......... HTML SVG Graphics
+
+SVG defines vector-based graphics in XML format.
+
+======>> What is SVG?
+
+    SVG stands for Scalable Vector Graphics
+    SVG is used to define graphics for the Web
+    SVG is a W3C recommendation
+    
+    
+======>> The HTML <svg> Element
+
+The HTML <svg> element is a container for SVG graphics.
+
+SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+
+
+
+
+
 
 
 
